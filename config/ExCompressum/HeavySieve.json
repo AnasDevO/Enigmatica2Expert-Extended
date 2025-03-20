@@ -209,7 +209,7 @@
           },
           {
             "meshLevel": 2,
-            "name": "jaopca:item_pieceboron",
+            "name": "exnihilocreatio:item_ore_boron",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -218,7 +218,7 @@
           },
           {
             "meshLevel": 2,
-            "name": "jaopca:item_pieceboron",
+            "name": "exnihilocreatio:item_ore_boron",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -263,7 +263,7 @@
           },
           {
             "meshLevel": 3,
-            "name": "jaopca:item_pieceboron",
+            "name": "exnihilocreatio:item_ore_boron",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -272,7 +272,7 @@
           },
           {
             "meshLevel": 3,
-            "name": "jaopca:item_pieceboron",
+            "name": "exnihilocreatio:item_ore_boron",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -281,7 +281,7 @@
           },
           {
             "meshLevel": 3,
-            "name": "jaopca:item_piecethorium",
+            "name": "exnihilocreatio:item_ore_thorium",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -290,7 +290,7 @@
           },
           {
             "meshLevel": 3,
-            "name": "jaopca:item_piecelithium",
+            "name": "exnihilocreatio:item_ore_lithium",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -299,7 +299,7 @@
           },
           {
             "meshLevel": 3,
-            "name": "jaopca:item_piecemagnesium",
+            "name": "exnihilocreatio:item_ore_magnesium",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -362,7 +362,7 @@
           },
           {
             "meshLevel": 4,
-            "name": "jaopca:item_pieceboron",
+            "name": "exnihilocreatio:item_ore_boron",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -371,7 +371,7 @@
           },
           {
             "meshLevel": 4,
-            "name": "jaopca:item_pieceboron",
+            "name": "exnihilocreatio:item_ore_boron",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -380,7 +380,7 @@
           },
           {
             "meshLevel": 4,
-            "name": "jaopca:item_piecethorium",
+            "name": "exnihilocreatio:item_ore_thorium",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -389,7 +389,7 @@
           },
           {
             "meshLevel": 4,
-            "name": "jaopca:item_piecelithium",
+            "name": "exnihilocreatio:item_ore_lithium",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -398,7 +398,7 @@
           },
           {
             "meshLevel": 4,
-            "name": "jaopca:item_piecemagnesium",
+            "name": "exnihilocreatio:item_ore_magnesium",
             "metadata": 0,
             "count": 1,
             "luck": 0,
@@ -407,7 +407,7 @@
           },
           {
             "meshLevel": 4,
-            "name": "jaopca:item_piecedraconium",
+            "name": "exnihilocreatio:item_ore_draconium",
             "metadata": 0,
             "count": 1,
             "luck": 0,

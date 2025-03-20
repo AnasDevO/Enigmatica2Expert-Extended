@@ -1,108 +1,142 @@
 [
   {
-    "name": "gold",
-    "color": {
-      "r": 1.0,
-      "g": 1.0,
-      "b": 0.0,
-      "a": 1.0
-    },
-    "result": {
-      "name": "minecraft:gold_ingot",
-      "meta": 0
+    "name": "tungsten",
+    "color": "2b2c2a",
+    "oredictName": "Tungsten",
+    "translations": {
+      "ru_ru": "Вольфрам",
+      "en_us": "Tungsten"
     }
+  },
+  {
+    "name": "anglesite",
+    "color": "facb20",
+    "oredictName": "Anglesite",
+    "translations": {
+      "ru_ru": "Англезит",
+      "en_us": "Anglesite"
+    }
+  },
+  {
+    "name": "draconium",
+    "color": "671fa3",
+    "oredictName": "Draconium",
+    "translations": {
+      "ru_ru": "Англезит",
+      "en_us": "Draconium"
+    }
+  },
+  {
+    "name": "benitoite",
+    "color": "d7dfc",
+    "oredictName": "Benitoite",
+    "translations": {
+      "ru_ru": "Бенитоит",
+      "en_us": "Benitoite"
+    }
+  },
+  {
+    "name": "gold",
+    "color": "ffff00",
+    "ingot": "minecraft:gold_ingot:-1",
+    "dust": "thermalfoundation:material:1"
   },
   {
     "name": "iron",
-    "color": {
-      "r": 0.7490196,
-      "g": 0.5019608,
-      "b": 0.2509804,
-      "a": 1.0
-    },
-    "result": {
-      "name": "minecraft:iron_ingot",
-      "meta": 0
-    }
-  },
-  {
-    "name": "copper",
-    "color": {
-      "r": 1.0,
-      "g": 0.6,
-      "b": 0.2,
-      "a": 1.0
-    }
-  },
-  {
-    "name": "tin",
-    "color": {
-      "r": 0.9019608,
-      "g": 1.0,
-      "b": 0.9490196,
-      "a": 1.0
-    }
+    "color": "bf8040",
+    "ingot": "minecraft:iron_ingot:-1",
+    "dust": "thermalfoundation:material:0"
   },
   {
     "name": "aluminium",
-    "color": {
-      "r": 0.7490196,
-      "g": 0.7490196,
-      "b": 0.7490196,
-      "a": 1.0
-    }
-  },
-  {
-    "name": "lead",
-    "color": {
-      "r": 0.2,
-      "g": 0.0,
-      "b": 0.4,
-      "a": 1.0
-    }
-  },
-  {
-    "name": "silver",
-    "color": {
-      "r": 0.9490196,
-      "g": 0.9490196,
-      "b": 0.9490196,
-      "a": 1.0
-    }
-  },
-  {
-    "name": "nickel",
-    "color": {
-      "r": 1.0,
-      "g": 1.0,
-      "b": 0.8,
-      "a": 1.0
-    }
+    "color": "bfbfbf",
+    "ingot": "thermalfoundation:material:132",
+    "dust": "thermalfoundation:material:68"
   },
   {
     "name": "ardite",
-    "color": {
-      "r": 1.0,
-      "g": 0.45882353,
-      "b": 0.101960786,
-      "a": 1.0
-    },
-    "result": {
-      "name": "tconstruct:ingots",
-      "meta": 1
-    }
+    "color": "ff751a",
+    "ingot": "tconstruct:ingots:1"
   },
   {
     "name": "cobalt",
-    "color": {
-      "r": 0.2,
-      "g": 0.2,
-      "b": 1.0,
-      "a": 1.0
-    },
-    "result": {
-      "name": "tconstruct:ingots",
-      "meta": 0
-    }
+    "color": "3333ff",
+    "ingot": "qmd:ingot:4",
+    "dust": "qmd:dust:4"
+  },
+  {
+    "name": "copper",
+    "color": "ff9933",
+    "ingot": "thermalfoundation:material:128",
+    "dust": "thermalfoundation:material:64"
+  },
+  {
+    "name": "lead",
+    "color": "330066",
+    "ingot": "thermalfoundation:material:131",
+    "dust": "thermalfoundation:material:67"
+  },
+  {
+    "name": "nickel",
+    "color": "ffffcc",
+    "ingot": "thermalfoundation:material:133",
+    "dust": "thermalfoundation:material:69"
+  },
+  {
+    "name": "silver",
+    "color": "f2f2f2",
+    "ingot": "thermalfoundation:material:130",
+    "dust": "thermalfoundation:material:66"
+  },
+  {
+    "name": "tin",
+    "color": "e6fff2",
+    "ingot": "thermalfoundation:material:129",
+    "dust": "thermalfoundation:material:65"
+  },
+  {
+    "name": "uranium",
+    "color": "4e5b43",
+    "ingot": "immersiveengineering:metal:5",
+    "dust": "immersiveengineering:metal:14"
+  },
+  {
+    "name": "titanium",
+    "color": "bd87ca",
+    "ingot": "qmd:ingot:3",
+    "dust": "qmd:dust:3"
+  },
+  {
+    "name": "thorium",
+    "color": "333333",
+    "ingot": "nuclearcraft:ingot:3",
+    "dust": "nuclearcraft:dust:3"
+  },
+  {
+    "name": "boron",
+    "color": "939393",
+    "ingot": "nuclearcraft:ingot:5",
+    "dust": "nuclearcraft:dust:5"
+  },
+  {
+    "name": "lithium",
+    "color": "ededed",
+    "ingot": "nuclearcraft:ingot:6",
+    "dust": "nuclearcraft:dust:6"
+  },
+  {
+    "name": "magnesium",
+    "color": "f8def8",
+    "ingot": "nuclearcraft:ingot:7",
+    "dust": "nuclearcraft:dust:7"
+  },
+  {
+    "name": "osmium",
+    "color": "bbddff"
+  },
+  {
+    "name": "platinum",
+    "color": "d7dfe7",
+    "ingot": "thermalfoundation:material:134"
   }
 ]
