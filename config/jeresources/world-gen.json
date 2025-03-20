@@ -30681,6 +30681,40 @@
     "dim": "Block Drops"
   },
   {
+    "block": "contenttweaker:ore_anglesite",
+    "distrib": "0,1.0;255,1.0;",
+    "silktouch": false,
+    "dropsList": [
+      {
+        "itemStack": "contenttweaker:anglesite:0",
+        "fortunes": {
+          "0": 1,
+          "1": 1.5,
+          "2": 2,
+          "3": 2.5
+        }
+      }
+    ],
+    "dim": "Block Drops"
+  },
+  {
+    "block": "contenttweaker:ore_benitoite",
+    "distrib": "0,1.0;255,1.0;",
+    "silktouch": false,
+    "dropsList": [
+      {
+        "itemStack": "contenttweaker:benitoite:0",
+        "fortunes": {
+          "0": 1,
+          "1": 1.5,
+          "2": 2,
+          "3": 2.5
+        }
+      }
+    ],
+    "dim": "Block Drops"
+  },
+  {
     "block": "randomthings:spectreleaf:0",
     "distrib": "0,1.0;255,1.0;",
     "silktouch": false,

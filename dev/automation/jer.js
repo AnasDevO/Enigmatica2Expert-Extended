@@ -21,7 +21,7 @@ const worldGen = loadJson(worldgenJsonPath)
 worldGen.splice(0, worldGen.length, ...worldGen.filter(o => o.dim !== 'Block Drops'))
 
 function addMeta(item) {
-  return item.replace(/(:[a-zA-Z]+)$/, '$1:0')
+  return item.replace(/(:[a-z]+)$/i, '$1:0')
 }
 
 /**
@@ -86,6 +86,8 @@ simple('twilightforest:magic_log_core:3', 'twilightforest:magic_log:3')
 simple('minecraft:mob_spawner', ['enderio:item_broken_spawner', 'actuallyadditions:item_misc:20'])
 simple('endreborn:crop_ender_flower', 'minecraft:ender_pearl')
 simple('exnihilocreatio:block_infested_leaves', 'minecraft:string', [2, 2, 2, 2])
+simple('contenttweaker:ore_anglesite', 'contenttweaker:anglesite', [1, 1.5, 2.0, 2.5])
+simple('contenttweaker:ore_benitoite', 'contenttweaker:benitoite', [1, 1.5, 2.0, 2.5])
 simple('randomthings:spectreleaf', ['randomthings:spectresapling', 'randomthings:ingredient:2'])
 simple('randomthings:beanpod', [
   'biomesoplenty:gem:1',
@@ -135,7 +137,7 @@ for (const garden of [
 }
 
 ;[...loadText('crafttweaker.log')
-  .matchAll(/Modify drop; Block: (?<block>.+) Drop: (?<stack>.+) (?<luck>\[.*\])/gm),
+  .matchAll(/Modify drop; Block: (?<block>.+) Drop: (?<stack>.+) (?<luck>\[.*\])/g),
 ].forEach(({ groups: { block, stack, luck } }) =>
   simple(block, stack, eval(luck).slice(0, 4).map(([o]) => o)))
 

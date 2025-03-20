@@ -11,6 +11,17 @@ if (utils.DEBUG) mods.jei.JEI.addItem(<draconicevolution:draconium_chest>.withTa
 
   BCTileData: { BCManagedData: { autoSmeltMode: 0 as byte, smeltEnergyPerTick: 256, colour: -16777216, furnaceOutputBlocked: 0 as byte, burnRate: 0.0, smeltProgress: 0.0, smeltTime: 100 as byte, isSmelting: 0 as byte }, ChestColour: -16777216, RegionData: { SR_6_nsweIO: -1 as byte, SR_4_xSize: 4 as byte, SR_5_nsweIO: -1 as byte, SR_0_ySize: 10 as byte, SR_2_xPos: 16 as byte, SR_1_xSize: 4 as byte, SR_3_xPos: 24 as byte, SR_3_dufIO: -1 as byte, SR_4_ySize: 3 as byte, SR_1_yPos: 0 as byte, SR_6_dufIO: -1 as byte, SR_3_Enabled: 1 as byte, SR_1_Invalid: 0 as byte, SR_4_xPos: 4 as byte, SR_3_xSize: 2 as byte, SR_5_Enabled: 1 as byte, SR_0_yPos: 0 as byte, SR_5_Invalid: 0 as byte, SR_1_Enabled: 1 as byte, SR_2_dufIO: -1 as byte, SR_5_dufIO: -1 as byte, SR_1_xPos: 8 as byte, SR_1_nsweIO: -1 as byte, SR_3_ySize: 10 as byte, SR_3_nsweIO: -1 as byte, SR_3_yPos: 0 as byte, SR_0_xSize: 4 as byte, SR_3_Invalid: 0 as byte, SR_2_ySize: 10 as byte, SR_5_xPos: 12 as byte, SR_4_yPos: 3 as byte, SR_2_xSize: 4 as byte, SR_0_xPos: 0 as byte, SR_5_ySize: 3 as byte, SR_4_dufIO: -1 as byte, SR_1_dufIO: -1 as byte, SR_5_yPos: 3 as byte, SR_2_Enabled: 1 as byte, SR_1_ySize: 10 as byte, SR_0_dufIO: -1 as byte, SR_2_yPos: 0 as byte, SR_0_Invalid: 0 as byte, SR_4_Enabled: 1 as byte, SR_0_nsweIO: -1 as byte, SR_0_Enabled: 1 as byte, SR_4_Invalid: 0 as byte, SR_2_Invalid: 0 as byte, SR_2_nsweIO: -1 as byte, SR_4_nsweIO: -1 as byte, SR_5_xSize: 4 as byte } } }));
 
+// ---------------------------------------------------
+// Align ores with all other Nether / End ore variants
+// ---------------------------------------------------
+furnace.remove(<draconicevolution:draconium_ingot>, <draconicevolution:draconium_ore:1>);
+furnace.remove(<draconicevolution:draconium_ingot>, <draconicevolution:draconium_ore:2>);
+mods.mekanism.enrichment.removeRecipe(<draconicevolution:draconium_ore:1>, <draconicevolution:draconium_dust> * 2);
+mods.mekanism.enrichment.removeRecipe(<draconicevolution:draconium_ore:2>, <draconicevolution:draconium_dust> * 2);
+
+furnace.addRecipe(<draconicevolution:draconium_ore> * 2, <draconicevolution:draconium_ore:1>, 1.0);
+furnace.addRecipe(<draconicevolution:draconium_ore> * 2, <draconicevolution:draconium_ore:2>, 1.0);
+
 // *======= Recipes =======*
 
 recipes.remove(<draconicevolution:celestial_manipulator>);

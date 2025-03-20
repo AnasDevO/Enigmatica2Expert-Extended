@@ -1,7 +1,7 @@
 {
   "guiScale": 3,
   "hudScale": 3,
-  "tooltipScale": 2,
+  "tooltipScale": 9,
   "customIndividualGuiScales": {
     "us.getfluxed.controlsearch.client.gui.GuiNewControls": {
       "scale": 2,

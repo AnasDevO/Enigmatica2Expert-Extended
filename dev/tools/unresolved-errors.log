@@ -1,8 +1,19 @@
+[main/WARN] [FML]: The mod with loading plugin com.cleanroommc.configanytime.ConfigAnytimePlugin is in blacklist and won't be loaded. Check forge_early.cfg for more info.
+[main/WARN] [FML]: The mod with loading plugin zone.rong.mixinbooter.MixinBooterPlugin is in blacklist and won't be loaded. Check forge_early.cfg for more info.
+[main/WARN] [Foundation]: Ignoring unknown json file %s
 [main/ERROR] [mixin]: Failed reading REFMAP JSON from : java.lang.NullPointerException Cannot invoke "org.spongepowered.asm.mixin.refmap.ReferenceMapper.setResourceName(String)" because "mapper" is null
 [main/ERROR] [mixin]: Critical problem: mixins.stellar_core_forge_asmmodparser.json:MixinASMModParser from mod unknown-owner target net.minecraftforge.fml.common.discovery.asm.ASMModParser was loaded too early.
-[main/ERROR] [LoliASM]: Optifine is installed. On demand sprites won't be activated as Optifine already has Smart Animations.
 [Client thread/WARN] [mixin]: Method overwrite conflict for hashCode in mixins.vintagefix.json:blockstates.FastMapStateHolderMixin from mod unknown-owner, previously written by github.kasuminova.stellarcore.mixin.minecraft.blockstateimpl.MixinStateImplementation. Skipping method.
+[Client thread/WARN] [mixin]: @Mixin target boni.dummy.network.DamageMessage$MessageHandlerClient$1 was not found mixins.rlmixins.dummypatch.json:dummy.DamageMessageMixin from mod unknown-owner
+[Client thread/WARN] [mixin]: @Mixin target boni.dummy.client.RenderFloatingNumber was not found mixins.rlmixins.dummypatch.json:dummy.RenderFloatingNumberMixin from mod unknown-owner
+[Client thread/ERROR] [FML]: Error adding mixin configuration for mixins.integrated_proxy.mod.json
+org.spongepowered.asm.launch.MixinInitialisationError: Error initialising mixin config mixins.integrated_proxy.mod.json
+	at org.spongepowered.asm.mixin.transformer.Config.create(Config.java:169) ~[Config.class:0.20.10+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.Mixins.createConfiguration(Mixins.java:121) ~[Mixins.class:0.20.10+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.Mixins.addConfiguration(Mixins.java:108) ~[Mixins.class:0.20.10+mixin.0.8.7]
+  [...]
 [Client thread/WARN] [mixin]: @Mixin target mcp.mobius.waila.api.impl.MetaDataProvider was not found mixins.tweakedlib.top.json:MetaDataProviderMixin from mod tweakedlib-2.0.1.jar
+[Client thread/WARN] [mixin]: @Mixin target mrtjp.projectred.relocation.MovingBlockRenderDispatcher was not found mixins.vintagefix.late.json:chunk_rendering.MixinMovingBlockRenderDispatcher from mod unknown-owner
 [Client thread/WARN] [mixin]: Static binding violation: PRIVATE @Overwrite method func_76615_h in mixins.alfheim.json:ChunkMixin from mod unknown-owner cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
 [Client thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class net.minecraft.entity.item.EntityMinecartFurnace from class com.lothrazar.cyclicmagic.item.minecart.EntityGoldFurnaceMinecart
 [Client thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class net.minecraft.entity.monster.EntitySlime from class teamroots.emberroot.entity.slime.EntityRainbowSlime
@@ -13,9 +24,9 @@
 [Client thread/WARN] [sonarcore]: 'WAILA' - unavailable or disabled in config
 [Client thread/WARN] [mixin]: Mixin apply for mod visualores-0.2.6.jar failed mixins.visualores.xaerominimap_core.json:MinimapRendererMixin from mod visualores-0.2.6.jar -> xaero.common.minimap.render.MinimapRenderer: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException Unexpecteded ClassMetadataNotFoundException whilst transforming the mixin class: [Transform LVT -> var=compassRenderer -> desc=Lxaero/common/minimap/waypoints/render/CompassRenderer;]
 org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: Unexpecteded ClassMetadataNotFoundException whilst transforming the mixin class: [Transform LVT -> var=compassRenderer -> desc=Lxaero/common/minimap/waypoints/render/CompassRenderer;]
-	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformMethod(MixinTargetContext.java:520) ~[sponge-mixin-0.20.6+mixin.0.8.7.jar:0.20.6+mixin.0.8.7]
-	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyNormalMethod(MixinApplicatorStandard.java:463) ~[sponge-mixin-0.20.6+mixin.0.8.7.jar:0.20.6+mixin.0.8.7]
-	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMethods(MixinApplicatorStandard.java:449) ~[sponge-mixin-0.20.6+mixin.0.8.7.jar:0.20.6+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformMethod(MixinTargetContext.java:520) ~[sponge-mixin-0.20.10+mixin.0.8.7.jar:0.20.10+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyNormalMethod(MixinApplicatorStandard.java:463) ~[sponge-mixin-0.20.10+mixin.0.8.7.jar:0.20.10+mixin.0.8.7]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMethods(MixinApplicatorStandard.java:449) ~[sponge-mixin-0.20.10+mixin.0.8.7.jar:0.20.10+mixin.0.8.7]
   [...]
 [Client thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class com.github.alexthe666.iceandfire.entity.EntityDreadThrall from class com.github.alexthe666.iceandfire.entity.EntityDreadKnight
 [Client thread/WARN] [net.minecraft.network.datasync.EntityDataManager]: defineId called for: class com.github.alexthe666.rats.server.entity.EntityFeralRatlantean from class com.github.alexthe666.rats.server.entity.EntityNeoRatlantean
@@ -27,5 +38,4 @@ Outputs:
 net.minecraft.item.ItemStack: [[1xitem.thaumadditions:salt_essence@0 thaumadditions:salt_essence]]
 Inputs:
 net.minecraft.item.ItemStack: [[1xitem.thaumadditions:salt_essence@0 thaumadditions:salt_essence]]
-  [...]
-[Client thread/WARN] [Had Enough Items]: Sending runtime to plugin: li.cil.oc.integration.jei.ModPluginOpenComputers took 111 ms
+  [...]

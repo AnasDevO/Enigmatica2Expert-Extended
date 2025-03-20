@@ -4,8 +4,8 @@
   "target-item": "minecraft:spawn_egg",
   "target-nbt": "{EntityTag:{id:\"rats:marbled_cheese_golem\"}}",
 
-  "catalyst": "minecraft:spawn_egg",
-  "catalyst-nbt": "{EntityTag:{id:\"rats:marbled_cheese_golem\"}}",
+  "catalyst": "engineersdecor:sign_caution",
+  "catalyst-nbt": "{display:{LocName:\"This is not real recipe, just a hint!\"}}",
 
   "input-types": {
     "c": { "id": "rats:marbled_cheese_raw", "meta": 0 },

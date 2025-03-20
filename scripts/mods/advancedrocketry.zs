@@ -65,14 +65,6 @@ recipes.addShaped('HeatProof Brick',
     [<minecraft:brick_block>, <ore:slimecrystalMagma>, <minecraft:brick_block>],
     [<minecraft:brick_block>, <minecraft:nether_brick>, <minecraft:brick_block>]]);
 
-// Elite Motor
-recipes.remove(<libvulpes:elitemotor>);
-recipes.addShapedMirrored('Elite Motor',
-  <libvulpes:elitemotor>,
-  [[<ore:gemDilithium>, <ore:coilTitanium>, <ore:plateIridium>],
-    [<ore:gemDilithium>, <ore:gearDiamond>, <ore:plateIridium>],
-    [<ore:gemDilithium>, <ore:coilTitanium>, <ore:plateIridium>]]);
-
 // Machine Structure
 recipes.remove(<libvulpes:structuremachine>);
 recipes.addShapedMirrored('Lib Vulpes Machine Structure',
@@ -251,6 +243,77 @@ scripts.process.alloy([<ore:ingotIridium>, <ore:ingotOsmium>], <ore:ingotOsmirid
 scripts.process.alloy([<ore:blockDiamond>, <ore:blockRedstone> * 5], <ore:blockCrystalFlux>.firstItem, 'only: AdvRockArc');
 scripts.process.alloy([<ore:ingotMagnesium> * 3, <ore:ingotBoron> * 6], <ore:ingotMagnesiumDiboride>.firstItem * 9, 'only: AdvRockArc');
 scripts.process.alloy([<ore:dustBorax>, <ore:itemSalt> * 4, <ore:plateCarbon>], <ore:ingotTitanium>.firstItem, 'only: AdvRockArc');
+
+craft.remake(<libvulpes:motor>, ['pretty',
+  '  ■',
+  '╱ E',
+  '  ■'], {
+  '■': <ore:coilCopper>,
+  '╱': <ore:stickSteel>,
+  'E': <ic2:crafting:6>,
+});
+
+craft.remake(<libvulpes:advancedmotor>, ['pretty',
+  '  G',
+  '╱ ■',
+  '  G'], {
+  'G': <ore:coilGold>,
+  '╱': <ore:stickTitaniumIridium>,
+  '■': <ore:blockMotor>,
+});
+
+craft.make(<libvulpes:advancedmotor>, ['pretty',
+  '  G ■',
+  '/ ╱ E',
+  '  G ■'], {
+  'G': <ore:coilGold>,
+  '■': <ore:coilCopper>,
+  '/': <ore:stickTitaniumIridium>,
+  '╱': <ore:stickSteel>,
+  'E': <ic2:crafting:6>,
+});
+
+craft.remake(<libvulpes:enhancedmotor>, ['pretty',
+  '  ■',
+  '◊ ▄',
+  '  ■'], {
+  '■': <ore:coilTitanium>,
+  '◊': <ore:gemDilithium>,
+  '▄': <ore:blockMotor>,
+});
+
+craft.make(<libvulpes:enhancedmotor>, ['pretty',
+  '▄ G ■',
+  '◊ ╱ E',
+  '▄ G ■'], {
+  '▄': <ore:coilTitanium>,
+  'G': <ore:coilGold>,
+  '■': <ore:coilCopper>,
+  '◊': <ore:gemDilithium>,
+  '╱': <ore:stickTitaniumIridium>,
+  'E': <ic2:crafting:6>,
+});
+
+craft.remake(<libvulpes:elitemotor>, ['pretty',
+  '  ■',
+  '/ ▄',
+  '  ■'], {
+  '■': <ore:coilIridium>,
+  '/': <redstonerepository:material:6>,
+  '▄': <ore:blockMotor>,
+});
+
+craft.make(<libvulpes:elitemotor>, ['pretty',
+  '■ ▄ G',
+  '/ ◊ E',
+  '■ ▄ G'], {
+  '■': <ore:coilIridium>,
+  '▄': <ore:coilTitanium>,
+  'G': <ore:coilGold>,
+  '/': <redstonerepository:material:6>,
+  '◊': <ore:gemDilithium>,
+  'E': <ic2:crafting:6>,
+});
 
 // [Space Suit Helmet] from [Glass][+3]
 recipes.removeShaped(<advancedrocketry:spacehelmet>);

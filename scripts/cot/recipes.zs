@@ -2,6 +2,7 @@
 #reloadable
 
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 
 furnace.setFuel(<contenttweaker:conglomerate_of_coal>, 60000);
 furnace.setFuel(<contenttweaker:blasted_coal>, 120000);
@@ -116,7 +117,7 @@ mods.tconstruct.Casting.addTableRecipe(<opencomputers:material:11>, <tconstruct:
 mods.tconstruct.Casting.addBasinRecipe(<opencomputers:case1>, null, <liquid:electronics>, 144 * 9);
 
 // Anglesite - Highest tier of Tech mods crystals
-mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:ore_anglesite>, 100000000, 1000000,
+mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:item_ore_anglesite>, 100000000, 1000000,
   <additionalcompression:gravelend_compressed:2>, [
     <ore:singularityEntangled>,
     <biomesoplenty:terrestrial_artifact>,
@@ -165,7 +166,7 @@ val benitoiteIngrs = [
 ] as IIngredient[];
 
 mods.extendedcrafting.CombinationCrafting.addRecipe(
-  <contenttweaker:ore_benitoite>, 100000000, 1000000,
+  <contenttweaker:item_ore_benitoite>, 100000000, 1000000,
   <additionalcompression:gravelnether_compressed:2>,
   benitoiteIngrs
 );
@@ -173,7 +174,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(
 mods.thaumcraft.Infusion.registerRecipe(
   'benitoite', // Name
   'INFUSION', // Research
-  <contenttweaker:ore_benitoite>, // Output
+  <contenttweaker:item_ore_benitoite>, // Output
   15, // Instability
   [<aspect:sanguis> * 1000, <aspect:mana> * 1000, <aspect:draco> * 1000],
   <additionalcompression:gravelnether_compressed:2>, // CentralItem
@@ -181,8 +182,27 @@ mods.thaumcraft.Infusion.registerRecipe(
 );
 
 // Benefication of Anglesite and Benitoite
-scripts.process.beneficiate(<contenttweaker:ore_anglesite>, 'Anglesite', 1, { exceptions: 'only: Grindstone' });
-scripts.process.beneficiate(<contenttweaker:ore_benitoite>, 'Benitoite', 1, { exceptions: 'only: Grindstone' });
+// Note: 'exceptions' field here could only accept normal whitelist, no 'only:' or 'strict:' modifiers
+scripts.process.beneficiate(<contenttweaker:ore_anglesite>, 'Anglesite', 1);
+scripts.process.beneficiate(<contenttweaker:ore_benitoite>, 'Benitoite', 1);
+
+// Remove excess items added by ExNihilo
+function cleanupExnihilo(base as IItemStack) as void {
+  // Remove Ingot
+  val ingot = base.definition.makeStack(3);
+  Purge(ingot);
+  mods.immersiveengineering.ArcFurnace.removeRecipe(ingot);
+
+  // Remove Dust
+  val dust = base.definition.makeStack(2);
+  mods.immersiveengineering.Crusher.removeRecipe(dust);
+}
+
+cleanupExnihilo(<contenttweaker:item_ore_anglesite>);
+cleanupExnihilo(<contenttweaker:item_ore_benitoite>);
+
+mods.bloodmagic.AlchemyTable.removeRecipe([<contenttweaker:ore_anglesite>, <bloodmagic:cutting_fluid>]);
+mods.bloodmagic.AlchemyTable.removeRecipe([<contenttweaker:ore_benitoite>, <bloodmagic:cutting_fluid>]);
 
 // Perfect Fuel is best fluid fuel in game
 mods.tconstruct.Alloy.addRecipe(<liquid:perfect_fuel>, [
@@ -201,7 +221,7 @@ mods.thermalexpansion.MagmaticDynamo.addFuel(<fluid:perfect_fuel>, 2000000000);
 var needPowerStr = mods.zenutils.StaticString.format('%,d', <contenttweaker:woodweave_singularity>.maxDamage).replaceAll(',', '§8,§6');
 scripts.lib.tooltip.desc.jei(<contenttweaker:woodweave_singularity>, 'singularity.woodweave', needPowerStr);
 
-scripts.do.diverse.addRecipe(
+static woodweaveRecipeFunction as function(IItemStack[string])IItemStack = scripts.do.diverse.addRecipe(
   'Woodweave Singularity',
   <avaritia:singularity>,
   <contenttweaker:woodweave_singularity>,
@@ -210,7 +230,7 @@ scripts.do.diverse.addRecipe(
 
 needPowerStr = mods.zenutils.StaticString.format('%,d', <contenttweaker:fish_singularity>.maxDamage).replaceAll(',', '§8,§6');
 scripts.lib.tooltip.desc.jei(<contenttweaker:fish_singularity>, 'singularity.fish', needPowerStr);
-scripts.do.diverse.addRecipe(
+static fishRecipeFunction as function(IItemStack[string])IItemStack = scripts.do.diverse.addRecipe(
   'Fish Singularity',
   <avaritia:singularity>,
   <contenttweaker:fish_singularity>,

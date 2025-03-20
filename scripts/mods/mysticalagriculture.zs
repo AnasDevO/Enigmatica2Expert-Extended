@@ -744,12 +744,7 @@ for i, item in furnaceByTier {
 // --------------------------------------------
 function remakeBlock(recName as string, output as IBlockState, ingrs as IIngredient[], fluid as string = 'stone') as void {
   if (!isNull(recName)) recipes.removeByRecipeName(recName);
-  scripts.do.burnt_in_fluid.add(ingrs[0].items[0].definition.id, output, fluid);
-  if (!(ingrs[0] has <mysticalagriculture:rock_crystal_essence>)) {
-    scripts.processWork.work(['ARCrystallizer'], null,
-      [ingrs[0].items[0] * 8], [<liquid:ic2construction_foam> * 8000],
-      [scripts.do.portal_spread.utils.stateToItem(output) * 8], null, null, null);
-  }
+  scripts.do.burnt_in_fluid.add(ingrs[0], output, fluid, 1.0, !(ingrs[0] has <mysticalagriculture:rock_crystal_essence>));
 }
 
 function makeSmelt(recName as string, output as ILiquidStack, ingrs as IIngredient[]) as void {

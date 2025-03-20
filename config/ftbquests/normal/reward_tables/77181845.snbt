@@ -636,6 +636,9 @@
 			},
 			id: "draconicevolution:draconium_chest"
 		}
+	},
+	{
+		item: "psicosts:psi_cell 1 3"
 	}],
 	loot_crate: {
 		string_id: "storage",

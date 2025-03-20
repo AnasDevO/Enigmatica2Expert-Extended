@@ -12,20 +12,14 @@
 		type: "item",
 		items: [{
 			item: "forestry:thermionic_tubes 1 7"
+		},
+		{
+			item: "forestry:thermionic_tubes 1 9"
 		}]
 	}],
 	rewards: [{
-		uid: "a4678a12",
-		type: "custom",
-		title: "{e2ee.quest.common}",
-		icon: {
-			tag: {
-				type: "common"
-			},
-			id: "ftbquests:lootcrate"
-		},
-		tags: [
-			"loot"
-		]
+		uid: "280373d3",
+		type: "item",
+		item: "forestry:thermionic_tubes 1 7"
 	}]
 }

@@ -90,62 +90,60 @@
 		count: 64
 	},
 	{
-		item: {
+		icon: {
 			tag: {
-				Energy: 15625000000L,
+				Energy: 9223372036854775807L,
 				Special: 0b,
 				Fluid: {
 					Amount: 0,
 					FluidName: "biofuel"
 				},
-				Selected: "UNCOMMON"
+				Selected: "ARTIFACT"
 			},
 			id: "industrialforegoing:infinity_drill"
-		}
-	},
-	{
+		},
 		item: {
 			tag: {
-				mekData: {
-					mode: 4,
-					energyStored: 2.0E7d
-				}
+				Energy: 9223372036854775807L,
+				Special: 0b,
+				Fluid: {
+					Amount: 0,
+					FluidName: "biofuel"
+				},
+				Selected: "ARTIFACT"
 			},
-			id: "mekanism:atomicdisassembler"
+			id: "industrialforegoing:infinity_drill"
 		}
 	},
 	{
 		item: "mysticalagriculture:ultimate_furnace"
 	},
 	{
-		item: "extrautils2:angelring 1 2"
-	},
-	{
 		item: {
 			tag: {
 				Items: [{
 					Slot: 0b,
-					Damage: 0s,
+					Count: 1b,
 					id: "rats:rat_upgrade_nonbeliever",
-					Count: 1b
+					Damage: 0s
 				},
 				{
 					Slot: 1b,
-					Damage: 0s,
+					Count: 1b,
 					id: "rats:rat_upgrade_aristocrat",
-					Count: 1b
+					Damage: 0s
 				},
 				{
 					Slot: 2b,
-					Damage: 0s,
+					Count: 1b,
 					id: "rats:rat_upgrade_speed",
-					Count: 1b
+					Damage: 0s
 				},
 				{
 					Slot: 3b,
-					Damage: 0s,
+					Count: 1b,
 					id: "rats:rat_upgrade_archeologist",
-					Count: 1b
+					Damage: 0s
 				}],
 				enchantmentColor: 2651799,
 				display: {
@@ -154,14 +152,6 @@
 			},
 			id: "rats:rat_upgrade_combined"
 		}
-	},
-	{
-		icon: "botania:laputashard 16 19",
-		item: "botania:laputashard 16 19",
-		count: 16
-	},
-	{
-		item: "draconicevolution:dislocator_advanced"
 	},
 	{
 		item: {
@@ -202,6 +192,16 @@
 		}
 	},
 	{
+		icon: {
+			tag: {
+				tank: {
+					Amount: 24000,
+					FluidName: "ic2uu_matter"
+				}
+			},
+			Count: 64,
+			id: "openblocks:tank"
+		},
 		item: {
 			tag: {
 				tank: {
@@ -210,7 +210,8 @@
 				}
 			},
 			id: "openblocks:tank"
-		}
+		},
+		count: 64
 	},
 	{
 		icon: "botania_tweaks:compressed_tiny_potato_8 3",
@@ -221,17 +222,6 @@
 		icon: "tconevo:material 32 2",
 		item: "tconevo:material 1 2",
 		count: 32
-	},
-	{
-		item: "extrautils2:teleporter 1 1"
-	},
-	{
-		item: {
-			tag: {
-				Material: "aethium"
-			},
-			id: "conarm:armor_trim"
-		}
 	},
 	{
 		item: {
@@ -263,23 +253,6 @@
 		}
 	},
 	{
-		icon: "rats:chunky_cheese_token 2",
-		item: "rats:chunky_cheese_token",
-		count: 2
-	},
-	{
-		item: "additionalcompression:cobblestone_compressed 1 9"
-	},
-	{
-		item: "additionalcompression:gravel_compressed 1 9"
-	},
-	{
-		item: "additionalcompression:blocksand_compressed 1 9"
-	},
-	{
-		item: "additionalcompression:dirt_compressed 1 9"
-	},
-	{
 		item: "additionalcompression:clay_compressed 1 9"
 	},
 	{
@@ -292,29 +265,12 @@
 		item: "additionalcompression:endstone_compressed 1 9"
 	},
 	{
-		icon: "draconicevolution:ender_energy_manipulator 8",
-		item: "draconicevolution:ender_energy_manipulator",
-		count: 8
-	},
-	{
 		item: {
 			tag: {
 				Pattern: {
-					Damage: 13s,
+					Count: 1b,
 					id: "extendedcrafting:material",
-					Count: 1b
-				}
-			},
-			id: "ic2:crystal_memory"
-		}
-	},
-	{
-		item: {
-			tag: {
-				Pattern: {
-					Damage: 1s,
-					id: "draconicevolution:draconium_capacitor",
-					Count: 1b
+					Damage: 13s
 				}
 			},
 			id: "ic2:crystal_memory"
@@ -330,17 +286,11 @@
 	},
 	{
 		item: {
-			ForgeCaps: {
-				Parent: {
-					Items: [],
-					Size: 18
-				}
-			},
 			tag: {
 				Energy: 256000000,
 				DEUpgrades: {
-					rfCap: 3b,
 					digSpeed: 3b,
+					rfCap: 3b,
 					digAOE: 3b
 				}
 			},
@@ -352,15 +302,6 @@
 	},
 	{
 		item: "rftoolsdim:dimension_builder"
-	},
-	{
-		item: {
-			tag: {
-				PsioCharge: 2560000
-			},
-			Damage: 3s,
-			id: "psicosts:psi_cell"
-		}
 	},
 	{
 		icon: "nae2:material 3 4",
@@ -392,26 +333,91 @@
 		count: 4
 	},
 	{
-		item: "mysticalagriculture:master_infusion_crystal"
-	},
-	{
-		item: "thaumicwonders:alienist_stone"
-	},
-	{
-		item: {
-			tag: {
-				location_back: ""
-			},
-			id: "cyclicmagic:book_ender"
-		}
-	},
-	{
 		icon: "avaritia:singularity 2 12",
 		item: "avaritia:singularity 1 12",
 		count: 2
 	},
 	{
 		item: "avaritiaio:infinitecapacitor"
+	},
+	{
+		item: {
+			tag: {
+				EnderLetterContent: {
+					slot2: {
+						id: "draconicevolution:wyvern_legs",
+						Count: 1,
+						Damage: 0s,
+						tag: {
+							Energy: 16000000,
+							DEUpgrades: {
+								rfCap: 2b,
+								shieldCap: 2b,
+								moveSpeed: 2b,
+								shieldRec: 2b
+							}
+						}
+					},
+					slot4: {
+						empty: 1b
+					},
+					slot3: {
+						id: "draconicevolution:wyvern_boots",
+						Count: 1,
+						Damage: 0s,
+						tag: {
+							Energy: 16000000,
+							DEUpgrades: {
+								jumpBoost: 2b,
+								rfCap: 2b,
+								shieldCap: 2b,
+								shieldRec: 2b
+							}
+						}
+					},
+					slot8: {
+						empty: 1b
+					},
+					slot1: {
+						id: "draconicevolution:wyvern_chest",
+						Count: 1,
+						Damage: 0s,
+						tag: {
+							Energy: 16000000,
+							DEUpgrades: {
+								rfCap: 2b,
+								shieldCap: 2b,
+								shieldRec: 2b
+							}
+						}
+					},
+					slot0: {
+						id: "draconicevolution:wyvern_helm",
+						Count: 1,
+						Damage: 0s,
+						tag: {
+							Energy: 16000000,
+							DEUpgrades: {
+								rfCap: 2b,
+								shieldCap: 2b,
+								shieldRec: 2b
+							}
+						}
+					},
+					slot6: {
+						empty: 1b
+					},
+					slot5: {
+						empty: 1b
+					},
+					slot7: {
+						empty: 1b
+					}
+				},
+				receiver: "Lucky pal"
+			},
+			id: "randomthings:enderletter"
+		}
 	}],
 	loot_crate: {
 		string_id: "mythic",

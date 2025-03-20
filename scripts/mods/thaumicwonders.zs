@@ -59,9 +59,7 @@ val transStones = [
 ] as IItemStack[];
 
 static getBonused as function(int,int)int = function (durA as int, durB as int) as int {
-  val minDur = min(durA, durB);
-  val durBonus = (minDur as double * 0.1 + 0.5) as int;
-  return durA + durB + durBonus;
+  return durA + durB + 0.05 * transStoneMaxDamage; // Vanilla anvil math
 };
 
 static getOutDurab as function(IItemStack,IItemStack)int = function (a as IItemStack, b as IItemStack) as int {

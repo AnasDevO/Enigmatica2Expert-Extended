@@ -276,12 +276,12 @@ function beneficiate(
     }
 
     // All crushing methods except sag mill
-    crush(input, dustOrGem, `${exceptions} macerator thermalCentrifuge crushingBlock SAGMill`, extraList, extraChances, { bonusType: 'MULTIPLY_OUTPUT' });
+    crush(input, dustOrGem, `${exceptions} macerator thermalCentrifuge crushingBlock SAGMill`, extraList, extraChances);
 
     // Sag mill separately since work too fast and too much output
     val sagmillChances = floatArrayOf(extraChances.length, 1.0f);
     for i, chance in extraChances { sagmillChances[i] = chance / 2.0f; }
-    crush(input, dustOrGem * (3.0 / 4 * dustOrGem.amount) as int, `${exceptions} only: SAGMill`, extraList, sagmillChances, { bonusType: 'MULTIPLY_OUTPUT' });
+    crush(input, dustOrGem * (3.0 / 4 * dustOrGem.amount) as int, 'only: SAGMill', extraList, sagmillChances, { bonusType: 'MULTIPLY_OUTPUT' });
 
     if (extraList.length >= 3) {
       workEx('massspectrometer', null, [input], null, [

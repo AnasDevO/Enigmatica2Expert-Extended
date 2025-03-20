@@ -106,8 +106,6 @@ return result.map((line) => {
   <item:biomesoplenty:gem_ore:5>               : <item:jaopca:item_dustmalachite>             * 8 ,
   <item:biomesoplenty:gem_ore:6>               : <item:jaopca:item_dustsapphire>              * 8 ,
   <item:draconicevolution:draconium_ore>       : <item:draconicevolution:draconium_dust>      * 4 ,
-  <item:draconicevolution:draconium_ore:1>     : <item:draconicevolution:draconium_dust>      * 4 ,
-  <item:draconicevolution:draconium_ore:2>     : <item:draconicevolution:draconium_dust>      * 4 ,
   <item:endreborn:block_wolframium_ore>        : <item:qmd:dust>                              * 4 ,
   <item:forestry:resources>                    : <item:jaopca:item_dustapatite>               * 40,
   <item:immersiveengineering:ore:5>            : <item:immersiveengineering:metal:14>         * 4 ,

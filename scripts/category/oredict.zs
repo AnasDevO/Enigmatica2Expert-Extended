@@ -1,6 +1,7 @@
 #modloaded appliedenergistics2
 #ignoreBracketErrors
 #priority 1000
+#reloadable
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
@@ -608,6 +609,14 @@ add(<ore:blockSugarcane>, <quark:reed_block>);
 add(<ore:blockSugar>, <quark:sugar_block>);
 add(<ore:blockFlesh>, <thaumcraft:flesh_block>);
 
+// Make draconic ore Nether/End variants like all other Nether/End ores
+removeItems(<ore:oreDraconium>, [
+  <draconicevolution:draconium_ore>,
+  <draconicevolution:draconium_ore:1>,
+  <draconicevolution:draconium_ore:2>,
+]);
+add(<ore:oreDraconium>, <draconicevolution:draconium_ore>);
+
 // Rearrange items in Dye Oredict to better integration
 // with AA [Lens Of Color]
 removeItems(<ore:dyeBrown>, [<enderio:item_material:49>, <industrialforegoing:fertilizer>]);
@@ -637,6 +646,8 @@ addItems(<ore:itemXP>, [
 ]);
 
 // Add oredict for benefication
+add(<ore:oreBenitoite>, <contenttweaker:ore_benitoite>);
+add(<ore:oreAnglesite>, <contenttweaker:ore_anglesite>);
 add(<ore:gemBenitoite>, <contenttweaker:benitoite>);
 add(<ore:gemAnglesite>, <contenttweaker:anglesite>);
 
@@ -648,6 +659,10 @@ add(<ore:aliencrystalRed>, <advancedrocketry:crystal:3>);
 add(<ore:aliencrystalYellow>, <advancedrocketry:crystal:4>);
 add(<ore:aliencrystalOrange>, <advancedrocketry:crystal:5>);
 add(<ore:sandOxidisedFerric>, <advancedrocketry:hotturf>);
+
+// Coil copies
+add(<ore:coilGold>, <nuclearcraft:turbine_dynamo_coil:3>);
+add(<ore:coilAluminum>, <nuclearcraft:turbine_dynamo_coil:2>);
 
 // Sequoia
 addItems(<ore:logSequoia>, [

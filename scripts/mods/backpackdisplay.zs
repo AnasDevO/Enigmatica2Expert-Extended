@@ -1,5 +1,6 @@
 #modloaded backpackdisplay
 #sideonly client
+#reloadable
 
 import mods.backpackdisplay.BackpackDisplay.addBackDisplay;
 import crafttweaker.item.IItemStack;
@@ -169,6 +170,35 @@ addBackDisplay(<scannable:scanner>, function(item) {
       result[k] = additional;
       k += 1;
     }
+  }
+
+  return result;
+});
+
+/*
+Ender Letter
+*/
+addBackDisplay(<randomthings:enderletter>, function(item) {
+  if (
+    isNull(item.tag)
+    || isNull(item.tag.EnderLetterContent)
+  ) return null;
+
+  // Count items
+  var length = 0;
+  for i in 0 .. 9 {
+    val it = item.tag.EnderLetterContent.memberGet('slot'~i);
+    if (isNull(it) || isNull(it.id)) continue;
+    length += 1;
+  }
+
+  var k = 0;
+  val result = arrayOf(length, null as IItemStack) as IItemStack[];
+  for i in 0 .. 9 {
+    val it = item.tag.EnderLetterContent.memberGet('slot'~i);
+    if (isNull(it) || isNull(it.id)) continue;
+    result[k] = IItemStack.fromData(it);
+    k += 1;
   }
 
   return result;

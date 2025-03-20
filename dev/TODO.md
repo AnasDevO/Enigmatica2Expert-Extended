@@ -2,29 +2,25 @@
 
 🚧✅❌⚠️ List of priorities:
 
-- [ ] 🟢 Add https://www.curseforge.com/minecraft/mc-mods/noisethreader
-- [ ] ✏️ Add 5% of max durab on combining ThW stones
-- [ ] 🛈 Add shader guide botania.cfg: `B:shaders.enabled=true`, DraconicEvolution.cfg: `B:useCrystalShaders=true`
-- [ ] ✏️ `Benitoite`, `Anglesite` fix benefication
-- [ ] 📀 `Flux Anodizers` should output more ore when working with Netherending Ores
-- [ ] 𝓩𝒮 Fix `/perf chunks` not correct with position of blocks https://i.imgur.com/ktLcvSn.png
-- [ ] 📀 Buff Forestry circuits speed bonus 25% => 100%
-- [ ] ✏️ cinnabar clusters can only be made in the crucible/thaumatorium and not via an alchemist's stone in a crystalization chamber
-- [ ] ✏️ end/nether `draconium ore` make smelt into default ore variant to line up with other end/nether ores
-- [ ] ✨ Make Singularities sucking in items in inventory
-- [x] 📖 `Animals chapter trophy` causing shader crash, replace item on stand
+- [ ] 🟢 Find how to work with Modrinth and install https://modrinth.com/mod/hit-indication
 - [ ] ✏️ Fix `Magma Crucible` cant melt Rotten Flesh
-- [x] 💧 `Hot Mercury` is supposed to make blocks of sugar when it flows into liquid starlight, but it just makes an air block instead
 - [ ] ✨ Download slideashow screenshots from external sources to descrease size of client zip
-- [ ] ❓ Ask `Aragolt` for perf command feedback
-- [x] 🚧 Remove version number duplicate on GH release message
-- [x] 📖 Villager Contract add quest
-- [x] Disable Ender Guardians spawn since bugged sometimes
-- [ ] Geese still dupe armor
-- [ ] 📖 quest `Molten Salt Reactor`: the two blocks with quantity of 2 should be fuel vessel ports and coolant heater ports instead of fuel cell port and reactor vent
-- [ ] Add Stymphalian Birds drop
-- [ ] Add `Ender Guardian` build mob recipe
-- [ ] Retrospectively fix UU matter negative amount
+- [ ] 🦆 Geese still dupe armor
+- [ ] `Creative Draconic Capacitor` make it from QMD materials to suggest advancing in QMD
+- [ ] 🟢 integrate **Legendary Tooltips**
+- [ ] 🏹 Fix projectiles accumulated on chunk borders, such as Scythe or Beam Laser
+- [ ] 🎁 Hide Liquids from Tanks/Florbs for new NC update fluids
+- [ ] 🧶 Feat: make some ores / materials only harvestable with Gluon Gun
+- [ ] 🪒 Add amounts to "Materials" reward chest
+- [ ] 🦐 Add Walrus mob build
+- [ ] 𝓩𝒮 `/perf` improvments:
+    > - Show chunks loaded by player
+    > - Use colors to determine how chunks are loaded (player / loader / etc)
+    > - Show chunks loaded by FTB chunks
+    > - Group chunks by dimension
+    > - Split big reports to pages
+    > - Fix not correct with position of blocks https://i.imgur.com/ktLcvSn.png
+    > - Add command mention in quest book
 
 ---
 
@@ -125,6 +121,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] ✏️ Add new crafting mechanic - melting blocks in world that cant be harvested, such as `Rock Crystal Ore, Swolen/Fibrous Taint, Vis Crystal, Grass Path, Porous stone, Antimatter, TF Tree Cores, TF Thorns, Trollstein, Foam, Block Mushrooms, Rat Hole`
 
 ### "Multiplayer" expansion
+- [ ] Think if i could make a script to keep 100% modpack completion after new quests are added
 - [ ] 💬 Chat names should have special unicode symbols to show Conflux level and "accomplishments" (including Discord support)
 - [ ] 💬 `Accomplishments` ⚜✳✴❇ mechanic:
   * Add messages "Player killex xxx mobs! WOW" based on spectacular stats.
@@ -135,26 +132,27 @@ Planned non-urgent changes, or just good ideas:
   * Table with more ideas: https://www.reddit.com/r/feedthememes/comments/jk9rag/the_political_compass_but_its_types_of_ftb_players/
 
 ### Mods
-- [ ] 🟢 Find how to work with Modrinth and install https://modrinth.com/mod/hit-indication
-- [ ] 🔴 Remove `Random Patches` since UT and Valkyrie now do most of its features
-- [ ] 🟠 Do not update `ae2-uel-v0.56.6` since its breaking plus + button craftings
-- [ ] 🔴 Remove `XTones` and `Environmental Materials`
-- [ ] 🟢 Return Village Names when fixed https://legacy.curseforge.com/minecraft/mc-mods/village-names/issues/18
-- [ ] 🟢 Add **Legendary Tooltips** when fixed: https://github.com/AHilyard/LegendaryTooltips/issues/47
-- [ ] 🟢 Add **Fancier Particles** (note gitignore) when fixed: https://github.com/Red-Studio-Ragnarok/Fancier-Block-Particles/issues/12
-- [ ] 🟢 Add **quality-tools** when someone integrate it
+- [ ] 🔴 Remove **Random Patches** since UT and Valkyrie now do most of its features
+- [ ] 🔴 Remove **XTones** and **Environmental Materials** since they are depricated by LittleTiles and Cathedral
+- [ ] 🟠 Do not update **AdvancedRocketry-1.12.2-2.1.4-9** to `2.1.5` since causing Skyblock generate overworld and unable to sleep on servers
+- [ ] 🟠 Do not update **ae2-uel-v0.56.6** since its breaking plus + button craftings
+- [ ] 🟠 Do not update **JAOPCA** - uncompatible with JAOPCACustom
+- [ ] 🟠 Do not update **spark** (not working propertly)
+- [ ] 🟠 Do not update **Advanced Rocketry - Reworked** until fixed https://github.com/dercodeKoenig/AdvancedRocketry/issues/50
 - [ ] 🟢 Add **everlastingabilities** when someone integrate it
-- [ ] 🟢 Install `Steve Carts` when someone integrate it
-- [ ] 🟢 Install `OpenGlasses2` - could help to find turnable blocks from coal
-- [ ] 🟠 Do not update `JAOPCA` - uncompatible with JAOPCACustom
-- [ ] 🟠 Do not update `spark` (not working propertly)
-- [ ] 🟢 Add Nothirium when fixed https://github.com/Meldexun/Nothirium/issues/9
-- [ ] 🟢 Return Custom Loading Screen when fixed https://github.com/AlexIIL/CustomLoadingScreen/issues/74
-- [ ] 🟢 Add someone integrate https://www.curseforge.com/minecraft/mc-mods/heat-and-climate
-- [ ] 🟢 Add when tested https://www.curseforge.com/minecraft/mc-mods/ae2-crafting-tree-legacy
+- [ ] 🟢 Add **Fancier Particles** (note gitignore) when fixed: https://github.com/Red-Studio-Ragnarok/Fancier-Block-Particles/issues/12
+- [ ] 🟢 Add **Heat And Climate** when someone integrate it
+- [ ] 🟢 Add **OpenGlasses2** - could help to find turnable blocks from coal
+- [ ] 🟢 Add **quality-tools** when someone integrate it
+- [ ] 🟢 Add **Steve Carts** when someone integrate it
+- [ ] 🟢 Add **Nothirium** when fixed https://github.com/Meldexun/Nothirium/issues/9
+- [ ] 🟢 Return **Custom Loading Screen** when fixed https://github.com/AlexIIL/CustomLoadingScreen/issues/74
+- [ ] 🟢 Return **Village Names** when fixed https://legacy.curseforge.com/minecraft/mc-mods/village-names/issues/18
 
 ### Other
 
+- [ ] ✏️ `Cinnabar Cluster` can only be made in the crucible/thaumatorium and not via an alchemist's stone in a crystalization chamber
+- [ ] 📀 `Flux Anodizers` should output more ore when working with Netherending Ores
 - [ ] ✨ Idea: for endgame run difficulty is always 0 for some dimensions.
 - [ ] 📀 [(Filled) Tin Can] fix not restoring nutrients
 - [ ] 📀 Speed up Dragon Forge
@@ -268,7 +266,7 @@ Planned non-urgent changes, or just good ideas:
 - [ ] ✏️ Add craft mechanic - Mud Ball hit something (called "humilate")
 - [ ] ✏️ Add mobs in Mek's gear
 - [ ] ✏️ Remove Cyclic's machines completely because they are laggy
-- [ ] 📖 List of items that may be add into loot boxes in future: https://i.imgur.com/G0A2KF1.png
+- [ ] 📖 List of items that may be add into loot boxes in future: https://i.imgur.com/G0A2KF1.png https://i.imgur.com/99itSSA.png
 - [ ] 🔄 Add custom progression for Twilight Forest based on Quest Book, since achievments can be disabled
 - [ ] 📀 Fix NPE https://is.gd/wZprY2
 - [ ] ✏️ Add multiblock structure that speed up blocks like Time In Bottle, but based on numbers of mobs around https://is.gd/tPPqt2
@@ -297,8 +295,7 @@ Planned non-urgent changes, or just good ideas:
 
 ### Mods to remove for "Lite" version
 
-- `Libnine`
-- `Fluid Drawers`
+- `Libnine` and `Fluid Drawers` because lag https://github.com/phantamanta44/fluid-drawers/issues/19
 
 ---
 

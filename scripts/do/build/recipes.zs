@@ -310,3 +310,16 @@ for dragonforgeBrick in [<iceandfire:dragonforge_fire_brick>, <iceandfire:dragon
     x: <contenttweaker:conglomerate_of_life>
   }).shift(0, 1, 0);
 }
+
+scripts.do.build.entity.add(<entity:endreborn:endguard>, [
+  [
+    'x'
+  ], [
+    'a'
+  ], [
+    'a'
+  ]
+], {
+  a: <minecraft:purpur_block>,
+  x: <contenttweaker:conglomerate_of_life>
+}).shift(0, 1, 0);

@@ -320,6 +320,8 @@ Some screenshots of new worldgen:
 
 ## Recommendations
 
+### Mods
+
 <img alt="Dark mode screenshot" src="https://i.imgur.com/208PcOt.png" align=right>
 
 - [**A Dark Mode**](https://www.curseforge.com/minecraft/texture-packs/minecraft-dark-mode-mod-support) - Almost 100% dark mode.
@@ -329,6 +331,18 @@ Some screenshots of new worldgen:
 - [**Dynamic Surroundings**](https://www.curseforge.com/minecraft/mc-mods/dynamic-surroundings) - better sounds and environmental, but increaing load time and lower FPS a bit
 
 - [**Fluidlogged API**](https://modrinth.com/mod/fluidlogged-api) - adds basic fluidlogging, widely configured for `E2E-E`. Its not included by default since causing slight TPS consumption [[1]](https://github.com/jbredwards/Fluidlogged-API/issues/184)[[2]](https://github.com/jbredwards/Fluidlogged-API/issues/182).
+
+### Shaders
+
+1. Optifine must be installed.
+
+2. Add shader, for example, [Complementary Unbound](https://www.curseforge.com/minecraft/shaders/complementary-unbound).
+
+3. Configure your MC configs:
+    - `config/astralsorcery.cfg` add `0` line after line `S:weakSkyRenders <`.
+    - `config/advRocketry/advancedRocketry.cfg` set `PlanetSkyOverride` and `StationSkyOverride` to `false`.
+    - `config/brandon3055/DraconicEvolution.cfg` set `useShaders` and `useCrystalShaders` to `false`
+    - `config/botania.cfg` set `shaders.enabled` to `false`
 
 -----------------
 

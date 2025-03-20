@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 // Add JEI hint for custom Imperfect zombie feature
-scripts.jei.crafting_hints.fill(null, <liquid:lifeessence> * 5000, <scalinghealth:crystalshard> * 3, <littletiles:multitiles>.withTag({tiles: [{bBox: [0, 0, 0, 1, 1, 1] as int[], tile: {block: "bloodmagic:ritual_stone"}}, {bBox: [0, 1, 0, 1, 2, 1] as int[], tile: {block: "minecraft:coal_block"}}], min: [0, 0, 0] as int[], size: [1, 2, 1] as int[], grid: 1, count: 2}));
+scripts.jei.crafting_hints.fill(null, <liquid:lifeessence>, <scalinghealth:crystalshard> * 3, <littletiles:multitiles>.withTag({tiles: [{bBox: [0, 0, 0, 1, 1, 1] as int[], tile: {block: "bloodmagic:ritual_stone"}}, {bBox: [0, 1, 0, 1, 2, 1] as int[], tile: {block: "minecraft:coal_block"}}], min: [0, 0, 0] as int[], size: [1, 2, 1] as int[], grid: 1, count: 2}));
 
 <assembly:crafting_hints>.addJEIRecipe(mods.requious.AssemblyRecipe.create(function (c) {
   c.addFluidOutput('fluid_out', <fluid:pyrotheum> * 1000);

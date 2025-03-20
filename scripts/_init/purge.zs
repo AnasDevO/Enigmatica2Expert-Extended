@@ -237,6 +237,14 @@ Purge(<ic2:resource:5>).ores([<ore:blockBronze>]); // Bronze
 recipesRemove(<ic2:ingot:5>);
 // *============================*
 
+Purge(<jaopca:item_dusttinyanglesite>).ores([<ore:dustTinyAnglesite>]);
+Purge(<jaopca:item_dusttinybenitoite>).ores([<ore:dustTinyBenitoite>]);
+Purge(<contenttweaker:item_ore_anglesite:1>).ores([<ore:oreAnglesite>]);
+Purge(<contenttweaker:item_ore_anglesite:2>).ores([<ore:dustAnglesite>]);
+Purge(<contenttweaker:item_ore_anglesite:3>).furn().ores([<ore:ingotAnglesite>]);
+Purge(<contenttweaker:item_ore_benitoite:1>).ores([<ore:oreBenitoite>]);
+Purge(<contenttweaker:item_ore_benitoite:2>).ores([<ore:dustBenitoite>]);
+Purge(<contenttweaker:item_ore_benitoite:3>).furn().ores([<ore:ingotBenitoite>]);
 Purge(<contenttweaker:item_ore_tungsten:1>).ores([<ore:oreTungsten>]);
 Purge(<contenttweaker:item_ore_tungsten:2>).ores([<ore:dustTungsten>]);
 Purge(<contenttweaker:item_ore_tungsten:3>).furn().ores([<ore:ingotTungsten>]);

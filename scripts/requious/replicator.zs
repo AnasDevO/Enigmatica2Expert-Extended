@@ -42,7 +42,7 @@ scripts.lib.offline.op.getRegistry.set('stat_replications', function(player as I
 scripts.lib.offline.op.setRegistry.set('stat_replications', function(player as IPlayer, value as string) as string {
   val oldValue = player.readStat(statReplications);
   if (oldValue != value as int)
-    player.addStat(statReplications, oldValue - value as int);
+    player.addStat(statReplications, value as int - oldValue);
   return null;
 });
 
@@ -269,7 +269,7 @@ function consumeMatter(m as MachineContainer, consumeAmount as int) as bool {
   );
   val uuid = m.getString('ownerUUID');
   val oldValue = scripts.lib.offline.op.get(uuid, 'stat_replications', 0) as int;
-  scripts.lib.offline.op.set(uuid, 'stat_replications', oldValue + consumeAmount);
+  scripts.lib.offline.op.set(uuid, 'stat_replications', max(0, oldValue) + consumeAmount);
   return true;
 }
 

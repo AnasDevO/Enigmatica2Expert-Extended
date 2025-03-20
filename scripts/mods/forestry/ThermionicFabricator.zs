@@ -115,14 +115,15 @@ addAltRecipe(<forestry:thermionic_tubes:11> * 4, Grid(["pretty",
   "♥": <ore:dustRedstone>, # Redstone
 }).shaped(), <fluid:glass> * 500);
 
-# [Blazing Electron Tube]*4 from [Pipette][+2]
-addAltRecipe(<forestry:thermionic_tubes:7> * 4, Grid(["pretty",
-  "  ▲  ",
-  "♥ ▲ ♥",
-  "▲ ▲ ▲"], {
-  "▲": <ore:dustBlaze>, # Blaze Powder
-  "♥": <ore:dustRedstone>, # Redstone
-}).shaped(), <fluid:glass> * 500);
+// Default recipe was changed
+// # [Blazing Electron Tube]*4 from [Pipette][+2]
+// addAltRecipe(<forestry:thermionic_tubes:7> * 4, Grid(["pretty",
+//   "  ▲  ",
+//   "♥ ▲ ♥",
+//   "▲ ▲ ▲"], {
+//   "▲": <ore:dustBlaze>, # Blaze Powder
+//   "♥": <ore:dustRedstone>, # Redstone
+// }).shaped(), <fluid:glass> * 500);
 
 # [Bronze Electron Tube]*4 from [Pipette][+2]
 addAltRecipe(<forestry:thermionic_tubes:2> * 4, Grid(["pretty",

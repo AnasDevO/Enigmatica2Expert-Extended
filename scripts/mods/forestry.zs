@@ -336,6 +336,27 @@ for i, input in farmBlocks {
   });
 }
 
+// Since tubes was buffed via mixins, make Blazing Tube recipe way harder
+mods.forestry.ThermionicFabricator.removeCast(<forestry:thermionic_tubes:7> * 4);
+scripts.mods.forestry.ThermionicFabricator.addCast(<forestry:thermionic_tubes:7> * 4, Grid(['pretty',
+  '  ▲  ',
+  '♥ ▲ ♥',
+  '▲ ▲ ▲'], {
+  '▲': <ore:dustPyrotheum>,
+  '♥': <ore:nuggetRedstoneAlloy>,
+}).shaped(), <fluid:glass> * 500);
+
+// Cheaper usage of Blazing Tube since it costy
+craft.remake(<forestry:farm_nether>, ['pretty',
+  '▬ ▲ ▬',
+  '▲ ⌂ ▲',
+  '▬ B ▬'], {
+  '▬': <ore:ingotBrickNether>,
+  '▲': <ore:dustBlaze>,
+  '⌂': <forestry:flexible_casing>,
+  'B': <forestry:chipsets:0>.withTag({ T: 0 as short }, false),
+});
+
 // Recycling
 scripts.process.melt(<forestry:smoker>, <fluid:tin> * (144 * 5));
 

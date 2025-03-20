@@ -613,6 +613,33 @@
 			},
 			id: "danknull:dank_null_5"
 		}
+	},
+	{
+		icon: "botania:laputashard 16 19",
+		item: "botania:laputashard 1 19",
+		count: 16
+	},
+	{
+		icon: "rats:chunky_cheese_token 4",
+		item: "rats:chunky_cheese_token",
+		count: 4
+	},
+	{
+		item: "additionalcompression:cobblestone_compressed 1 9"
+	},
+	{
+		item: "additionalcompression:gravel_compressed 1 9"
+	},
+	{
+		item: "additionalcompression:blocksand_compressed 1 9"
+	},
+	{
+		item: "additionalcompression:dirt_compressed 1 9"
+	},
+	{
+		icon: "draconicevolution:ender_energy_manipulator 8",
+		item: "draconicevolution:ender_energy_manipulator",
+		count: 8
 	}],
 	loot_crate: {
 		string_id: "legendary",

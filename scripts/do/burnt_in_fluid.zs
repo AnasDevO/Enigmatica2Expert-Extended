@@ -3,6 +3,7 @@
 #reloadable
 
 import crafttweaker.block.IBlockState;
+import crafttweaker.item.IIngredient;
 import crafttweaker.world.IFacing;
 import native.net.minecraft.util.EnumParticleTypes;
 
@@ -17,10 +18,17 @@ static fluidToBlock as string[string] = {
 static burntRecipes as double[IBlockState][string][string]
                = {} as double[IBlockState][string][string]$orderly;
 
-function add(inputId as string, blockOutput as IBlockState, fluidId as string = 'stone', chance as double = 1.0) as void {
-  if (blockOutput.block.definition.id == 'minecraft:air') {
+function add(
+  input as IIngredient,
+  outputState as IBlockState,
+  fluidId as string = 'stone',
+  chance as double = 1.0,
+  addAlt as bool = true
+) as void {
+  val inputId = input.items[0].definition.id;
+  if (outputState.block.definition.id == 'minecraft:air') {
     logger.logWarning('[Burn In Fluid] Failed to add recipe since block is Air. inputId: ' ~ inputId
-    ~ ' blockOutput: ' ~ blockOutput.commandString
+    ~ ' outputState: ' ~ outputState.commandString
     ~ ' fluidId: ' ~ fluidId
     ~ ' chance: ' ~ chance
     );
@@ -29,10 +37,23 @@ function add(inputId as string, blockOutput as IBlockState, fluidId as string = 
 
   if (isNull(burntRecipes[inputId])) burntRecipes[inputId] = {};
   if (isNull(burntRecipes[inputId][fluidId])) burntRecipes[inputId][fluidId] = {};
-  burntRecipes[inputId][fluidId][blockOutput] = chance;
+  burntRecipes[inputId][fluidId][outputState] = chance;
+
+  // Add alternative high-tech recipe
+  if (addAlt) {
+    val sturdity = getBlockSturdity(outputState);
+    scripts.processWork.work(['ARCrystallizer'], null,
+      [input * ((1.0 / chance) as int * 8)], [<liquid:ic2construction_foam> * 8000],
+      [scripts.do.portal_spread.utils.stateToItem(outputState) * 8], null, null, null, { energy: 20000 * sturdity, time: 10 * sturdity });
+  }
 }
 
-if (utils.DEBUG) add('extrautils2:redorchid', <blockstate:minecraft:redstone_ore>, 'stone', 1.0 / 3.0);
+// Get roughtly how difficult is to harvest a block
+// Used for approximate time / power usage of alternative methods
+function getBlockSturdity(state as IBlockState) as double {
+  val def = state.block.definition;
+  return (pow(max(0, def.hardness), 0.5) + 1) * (max(0, def.getHarvestLevel(state)) + 1);
+}
 
 // This function should be called once
 // warding `/ct reload`
