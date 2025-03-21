@@ -29,8 +29,8 @@ MINER:
 	actuallyadditions:quartz_paxel // Black Quartz AIOT
 	5:
 	bloodmagic:demon_crystal // Demon Will Crystal Cluster
-	jaopca:mekanism_crystal.shardsilver
-	jaopca:mekanism_crystal.shardmithril
+	jaopca:abyssalcraft_crystal_shard.silver
+	jaopca:abyssalcraft_crystal_shard.mithril
 	astralsorcery:blockgemcrystals:2 // Gem Crystal Cluster
 	astralsorcery:blockgemcrystals:3 // Gem Crystal Cluster
 	astralsorcery:blockgemcrystals:4 // Gem Crystal Cluster

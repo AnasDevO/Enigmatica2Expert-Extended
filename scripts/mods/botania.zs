@@ -384,7 +384,7 @@ scripts.process.melt(<botania:gaiahead>, <liquid:dark_matter> * (144 * 3), 'exce
 
 <entity:botania:pink_wither>.addDrop(<enderio:item_alloy_endergy_ingot:4>, 2, 6);
 <entity:botania:pink_wither>.addDrop(<industrialforegoing:pink_slime_ingot>, 3, 9);
-<entity:botania:pixie>.addPlayerOnlyDrop(<jaopca:dust.tinytitanium>, 1, 3);
+<entity:botania:pixie>.addPlayerOnlyDrop(<jaopca:tiny_dust.titanium>, 1, 3);
 
 // Way cheaper because all mods ca spawn vanilla animals
 // [Cocoon of Caprice]*4 from [Pumpkin][+2]

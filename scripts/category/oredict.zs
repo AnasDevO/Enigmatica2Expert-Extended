@@ -533,7 +533,7 @@ for item in loadedMods['contenttweaker'].items {
     removeHunkOre(item);
 }
 for item in loadedMods['jaopca'].items {
-  if (item.definition.id.matches('jaopca:exnihilocreatio_chunk.\\w+'))
+  if (item.definition.id.matches('jaopca:item_hunk\\w+'))
     removeHunkOre(item);
 }
 

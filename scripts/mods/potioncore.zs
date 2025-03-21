@@ -304,7 +304,7 @@ function addBrewWithUpgrades(basePotionName as string,
 
   // add lengthened recipes
   if (!isNull(longPotionName)) {
-    addBrewWithConversions(potionName, <jaopca:dust.tinyredstone>, longPotionName);
+    addBrewWithConversions(potionName, <jaopca:tiny_dust.redstone>, longPotionName);
   }
 }
 

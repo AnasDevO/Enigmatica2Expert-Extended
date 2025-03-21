@@ -119,3 +119,6 @@ config/opencomputers/hardmode.recipes
 config/ZS_Replacer.py
 patchouli_books/ZS_Replacer.py
 scripts/ZS_Replacer.py
+config/ZS_Replacer - prio.py
+patchouli_books/ZS_Replacer - prio.py
+scripts/ZS_Replacer - prio.py

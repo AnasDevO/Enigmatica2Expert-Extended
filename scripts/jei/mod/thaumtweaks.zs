@@ -71,8 +71,8 @@ MINER: [[
     <actuallyadditions:quartz_paxel>,
   ], [
     <bloodmagic:demon_crystal>,
-    <jaopca:mekanism_crystal.shardsilver>,
-    <jaopca:mekanism_crystal.shardmithril>,
+    <jaopca:abyssalcraft_crystal_shard.silver>,
+    <jaopca:abyssalcraft_crystal_shard.mithril>,
     <astralsorcery:blockgemcrystals:2>,
     <astralsorcery:blockgemcrystals:3>,
     <astralsorcery:blockgemcrystals:4>,
