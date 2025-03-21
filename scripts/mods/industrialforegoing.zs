@@ -391,7 +391,7 @@ function cleanupBenification(item as IItemStack, ingot as IItemStack, dust as II
   mods.thermalexpansion.Pulverizer.removeRecipe(item);
 }
 
-mods.thaumcraft.Crucible.removeRecipe(<jaopca:item_clustertitanium>);
+mods.thaumcraft.Crucible.removeRecipe(<jaopca:thaumcraft_cluster.titanium>);
 cleanupBenification(<libvulpes:ore0:8>, <libvulpes:productingot:7>, <libvulpes:productdust:7>, <fluid:titanium>);
 
 // Peaceful alt

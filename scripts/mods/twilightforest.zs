@@ -107,7 +107,7 @@ val rockRecycleTable as IItemStack[][IIngredient] = {
 <twilightforest:castle_pillar:1>     : [<mekanism:salt>, <appliedenergistics2:material:3>, <astralsorcery:itemusabledust:1>],
 <twilightforest:deadrock>            |
 <twilightforest:deadrock:1>          |
-<twilightforest:deadrock:2>          : [<ic2:dust:1>, <nuclearcraft:dust:8>, <jaopca:item_dustdimensionalshard>],
+<twilightforest:deadrock:2>          : [<ic2:dust:1>, <nuclearcraft:dust:8>, <jaopca:dust.dimensionalshard>],
 <twilightforest:castle_brick>        |
 <twilightforest:castle_brick:1>      |
 <twilightforest:castle_brick:2>      |

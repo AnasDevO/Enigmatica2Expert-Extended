@@ -45,7 +45,7 @@ globSync('config/bloodmagic/meteors/*.json')
   ]
 }).sort((a, b) => b[2] - a[2])
 ) */
-addMeteor(<jaopca:block_blockdilithium:0> , 1000000, [<ore:sandOxidisedFerric> * 147, <ore:oreEndDilithium> * 73, <ore:oreClathrateRedstone> * 29, <ore:oreClathrateEnder> * 29, <ore:oreClathrateGlowstone> * 29]);
+addMeteor(<jaopca:block.dilithium:0> , 1000000, [<ore:sandOxidisedFerric> * 147, <ore:oreEndDilithium> * 73, <ore:oreClathrateRedstone> * 29, <ore:oreClathrateEnder> * 29, <ore:oreClathrateGlowstone> * 29]);
 addMeteor(<tconstruct:metal:1>            , 850000 , [<ore:oreCobalt> * 62, <ore:oreArdite> * 62, <ore:oreQuartz> * 55, <ore:oreNetherCoal> * 48, <ore:oreNetherRedstone> * 40, <ore:oreNetherLapis> * 37, <ore:oreNetherIron> * 33, <ore:oreNetherGold> * 29, <ore:oreNetherTin> * 25, <ore:oreNetherAluminum> * 22, <ore:oreNetherCopper> * 22, <ore:oreNetherLead> * 22, <ore:oreNetherDiamond> * 22, <ore:oreNetherNickel> * 18, <ore:oreNetherSilver> * 18, <ore:oreNetherCertusQuartz> * 18, <ore:oreNetherChargedCertusQuartz> * 14, <ore:oreNetherPlatinum> * 11, <ore:oreNetherOsmium> * 11, <ore:oreNetherUranium> * 11]);
 addMeteor(<minecraft:emerald_block:0>     , 700000 , [<ore:oreAmber> * 25, <ore:oreDiamond> * 20, <ore:oreLapis> * 18, <ore:oreCertusQuartz> * 18, <ore:oreCinnabar> * 14, <ore:oreProsperity> * 11, <ore:oreCoal> * 3, <ore:oreRuby> * 3, <ore:orePeridot> * 3, <ore:oreTopaz> * 3, <ore:oreTanzanite> * 3, <ore:oreMalachite> * 3, <ore:oreSapphire> * 3, <ore:oreApatite> * 3, <ore:oreQuartzBlack> * 3]);
 addMeteor(<immersiveengineering:storage:5>, 550000 , [<ore:oreBoron> * 108, <ore:oreThorium> * 93, <ore:oreLithium> * 62, <ore:oreMagnesium> * 46]);

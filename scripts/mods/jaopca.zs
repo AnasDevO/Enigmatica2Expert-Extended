@@ -7,15 +7,15 @@ recipes.addShaped('JAOPCA Tiny Dust4', <thermalfoundation:material:768>, [[<ore:
 recipes.addShaped('JAOPCA Tiny Dust6', <thermalfoundation:material:68>, [[<ore:dustTinyAluminium>, <ore:dustTinyAluminium>, <ore:dustTinyAluminium>],[<ore:dustTinyAluminium>, <ore:dustTinyAluminium>, <ore:dustTinyAluminium>], [<ore:dustTinyAluminium>, <ore:dustTinyAluminium>, <ore:dustTinyAluminium>]]);
 
 // Dust -> Gem conversion
-furnace.addRecipe(<biomesoplenty:gem:7>                , <jaopca:item_dustamber>);
-furnace.addRecipe(<biomesoplenty:gem>                  , <jaopca:item_dustamethyst>);
-furnace.addRecipe(<forestry:apatite>                   , <jaopca:item_dustapatite>);
-furnace.addRecipe(<astralsorcery:itemcraftingcomponent>, <jaopca:item_dustaquamarine>);
-furnace.addRecipe(<appliedenergistics2:material:1>     , <jaopca:item_dustchargedcertusquartz>);
-furnace.addRecipe(<biomesoplenty:gem:5>                , <jaopca:item_dustmalachite>);
-furnace.addRecipe(<biomesoplenty:gem:2>                , <jaopca:item_dustperidot>);
-furnace.addRecipe(<biomesoplenty:gem:1>                , <jaopca:item_dustruby>);
-furnace.addRecipe(<biomesoplenty:gem:6>                , <jaopca:item_dustsapphire>);
-furnace.addRecipe(<biomesoplenty:gem:4>                , <jaopca:item_dusttanzanite>);
-furnace.addRecipe(<biomesoplenty:gem:3>                , <jaopca:item_dusttopaz>);
-furnace.addRecipe(<trinity:trinitite_shard>            , <jaopca:item_dusttrinitite>);
+furnace.addRecipe(<biomesoplenty:gem:7>                , <jaopca:dust.amber>);
+furnace.addRecipe(<biomesoplenty:gem>                  , <jaopca:dust.amethyst>);
+furnace.addRecipe(<forestry:apatite>                   , <jaopca:dust.apatite>);
+furnace.addRecipe(<astralsorcery:itemcraftingcomponent>, <jaopca:dust.aquamarine>);
+furnace.addRecipe(<appliedenergistics2:material:1>     , <jaopca:dust.chargedcertusquartz>);
+furnace.addRecipe(<biomesoplenty:gem:5>                , <jaopca:dust.malachite>);
+furnace.addRecipe(<biomesoplenty:gem:2>                , <jaopca:dust.peridot>);
+furnace.addRecipe(<biomesoplenty:gem:1>                , <jaopca:dust.ruby>);
+furnace.addRecipe(<biomesoplenty:gem:6>                , <jaopca:dust.sapphire>);
+furnace.addRecipe(<biomesoplenty:gem:4>                , <jaopca:dust.tanzanite>);
+furnace.addRecipe(<biomesoplenty:gem:3>                , <jaopca:dust.topaz>);
+furnace.addRecipe(<trinity:trinitite_shard>            , <jaopca:dust.trinitite>);

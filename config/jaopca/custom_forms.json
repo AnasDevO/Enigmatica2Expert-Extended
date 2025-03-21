@@ -5,5 +5,4 @@
     ,{"name": "skyresources_dirty_gem"      ,"secondaryName": "dirtyGem"    ,"type": "item","materialTypes": ["ingot", "gem", "crystal", "dust"]}
     ,{"name": "abyssalcraft_crystal"        ,"secondaryName": "crystalAbyss","type": "item","materialTypes": ["ingot", "gem", "crystal", "dust"]}
     ,{"name": "abyssalcraft_crystal_shard"  ,"secondaryName": "crystalShard","type": "item","materialTypes": ["ingot", "gem", "crystal", "dust"]}
-    ,{"name": "abyssalcraft_crystal_cluster","secondaryName": "cluster"     ,"type": "item","materialTypes": ["ingot", "gem", "crystal", "dust"]}
 ]

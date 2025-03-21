@@ -116,3 +116,6 @@ config/JustEnoughCalculation/record.json
 config/opencomputers/default.recipes
 config/opencomputers/gregtech.recipes
 config/opencomputers/hardmode.recipes
+config/ZS_Replacer.py
+patchouli_books/ZS_Replacer.py
+scripts/ZS_Replacer.py

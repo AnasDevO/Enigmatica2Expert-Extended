@@ -37,7 +37,7 @@ val energyDimletIngrs = {
   Beta   : <avaritia:block_resource>,
   Epsilon: <plustic:mirionblock>,
   Alpha  : <contenttweaker:terrestrial_artifact_block>,
-  Gamma  : <jaopca:item_dustalchemerald>,
+  Gamma  : <jaopca:dust.alchemerald>,
   Zeta   : <rats:idol_of_ratlantis>,
 } as IItemStack[string];
 

@@ -27,18 +27,18 @@ val coinMap = {
   <thermalfoundation:coin:102>: { energyData: 116250, override: true }, // Lumium
   <thermalfoundation:coin:103>: { energyData: 885000, override: true }, // Enderium
 
-  <jaopca:item_coinardite>         : { energyData: 90000, override: true },
-  <jaopca:item_coincobalt>         : { energyData: 75000, override: true },
-  <jaopca:item_coindraconium>      : { energyData: 225000, override: true },
-  <jaopca:item_coinosmium>         : { energyData: 75000, override: true },
-  <jaopca:item_coinuranium>        : { energyData: 60000, override: true },
-  <jaopca:item_cointhorium>        : { energyData: 45000, override: true },
-  <jaopca:item_coinlithium>        : { energyData: 55000, override: true },
-  <jaopca:item_coinboron>          : { energyData: 45000, override: true },
-  <jaopca:item_coinmagnesium>      : { energyData: 55000, override: true },
-  <jaopca:item_cointitanium>       : { energyData: 125000, override: true },
-  <jaopca:item_cointungsten>       : { energyData: 65000, override: true },
-  <jaopca:item_coinastralstarmetal>: { energyData: 45000, override: true },
+  <jaopca:gear.ardite>         : { energyData: 90000, override: true },
+  <jaopca:gear.cobalt>         : { energyData: 75000, override: true },
+  <jaopca:gear.draconium>      : { energyData: 225000, override: true },
+  <jaopca:gear.osmium>         : { energyData: 75000, override: true },
+  <jaopca:gear.uranium>        : { energyData: 60000, override: true },
+  <jaopca:gear.thorium>        : { energyData: 45000, override: true },
+  <jaopca:gear.lithium>        : { energyData: 55000, override: true },
+  <jaopca:gear.boron>          : { energyData: 45000, override: true },
+  <jaopca:gear.magnesium>      : { energyData: 55000, override: true },
+  <jaopca:gear.titanium>       : { energyData: 125000, override: true },
+  <jaopca:gear.tungsten>       : { energyData: 65000, override: true },
+  <jaopca:gear.astralstarmetal>: { energyData: 45000, override: true },
 
   <redstonerepository:material:9>: { energyData: 8060250, override: true },
 

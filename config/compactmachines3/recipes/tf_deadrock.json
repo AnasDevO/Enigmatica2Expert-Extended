@@ -10,7 +10,7 @@
 
   "input-types": {
     "w": { "id": "sonarcore:reinforcedstoneblock" },
-    "o": { "id": "jaopca:block_blockdimensionalshard" }
+    "o": { "id": "jaopca:block.dimensionalshard" }
   },
 
   "symmetrical": true,

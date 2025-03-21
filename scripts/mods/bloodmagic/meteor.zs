@@ -21,7 +21,7 @@ val METEOR_CHANCE = 0.01;
 
 static meteorCatalystForDimension as IItemStack[int] = {
   122: <minecraft:iron_block>,
-  123: <jaopca:block_blockdilithium>,
+  123: <jaopca:block.dilithium>,
 };
 
 // Allow only 1 meteor per tick summoned

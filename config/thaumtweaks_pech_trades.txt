@@ -1,22 +1,22 @@
 MINER:
 	1:
 	extrautils2:compressedcobblestone:2 // Triple Compressed Cobblestone
-	jaopca:item_clustertungsten // Native Tungsten Cluster
+	jaopca:thaumcraft_cluster.tungsten // Native Tungsten Cluster
 	thaumcraft:cluster:4 // Native Silver Cluster
-	jaopca:item_clusterdraconium // Native Draconium Cluster
-	jaopca:item_clustertitanium // Native Titanium Cluster
-	jaopca:item_clusterruby // Native Ruby Cluster
+	jaopca:thaumcraft_cluster.draconium // Native Draconium Cluster
+	jaopca:thaumcraft_cluster.titanium // Native Titanium Cluster
+	jaopca:thaumcraft_cluster.ruby // Native Ruby Cluster
 	2:
 	extrautils2:compresseddirt:2 // Triple Compressed Dirt
-	jaopca:item_clusteriridium // Native Iridium Cluster
-	jaopca:item_clusterastralstarmetal // Native Astral Starmetal Cluster
+	jaopca:thaumcraft_cluster.iridium // Native Iridium Cluster
+	jaopca:thaumcraft_cluster.astralstarmetal // Native Astral Starmetal Cluster
 	thaumcraft:thaumium_pick // Thaumium Pickaxe
 	thaumcraft:thaumium_shovel // Thaumium Shovel
 	thaumcraft:thaumium_axe // Thaumium Axe
 	3:
 	extrautils2:compressednetherrack:2 // Triple Compressed Netherrack
-	jaopca:item_clustermithril // Native Mithril Cluster
-	jaopca:item_clustertanzanite // Native Tanzanite Cluster
+	jaopca:thaumcraft_cluster.mithril // Native Mithril Cluster
+	jaopca:thaumcraft_cluster.tanzanite // Native Tanzanite Cluster
 	astralsorcery:blockcelestialcrystals:4 // Celestial Crystal Cluster
 	thaumcraft:turret:2 // Arcane Bore
 	twilightforest:ore_magnet // Ore Magnet
@@ -29,8 +29,8 @@ MINER:
 	actuallyadditions:quartz_paxel // Black Quartz AIOT
 	5:
 	bloodmagic:demon_crystal // Demon Will Crystal Cluster
-	jaopca:item_crystalshardsilver
-	jaopca:item_crystalshardmithril
+	jaopca:mekanism_crystal.shardsilver
+	jaopca:mekanism_crystal.shardmithril
 	astralsorcery:blockgemcrystals:2 // Gem Crystal Cluster
 	astralsorcery:blockgemcrystals:3 // Gem Crystal Cluster
 	astralsorcery:blockgemcrystals:4 // Gem Crystal Cluster

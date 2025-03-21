@@ -83,7 +83,7 @@ mods.extendedcrafting.CombinationCrafting.addRecipe
 // [Draconic Core]*2 from [Draconium Infused Obsidian][+1]
 recipes.remove(<draconicevolution:draconic_core>);
 scripts.process.alloy(
-  [<jaopca:item_geardraconium> * 2, <draconicevolution:infused_obsidian>],
+  [<jaopca:gear.draconium> * 2, <draconicevolution:infused_obsidian>],
   <draconicevolution:draconic_core> * 2,
   'only: induction alloySmelter kiln'
 );

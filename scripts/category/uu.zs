@@ -615,7 +615,7 @@ static values as int[int][string] = {
   'tconstruct:materials'                           : { 0: 22, 17: 19000 },
   'mysticalagriculture:infusion_crystal'           : { 0: 22000 },
   'twilightforest:ironwood_ingot'                  : { 0: 23000 },
-  'jaopca:item_crystaldraconium'                   : { 0: 25000 },
+  'jaopca:mekanism_crystal.draconium'                   : { 0: 25000 },
   'twilightforest:fiery_ingot'                     : { 0: 27000 },
   'libvulpes:productgem'                           : { 0: 40000 },
   'minecraft:shulker_shell'                        : { 0: 40000 },

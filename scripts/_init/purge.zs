@@ -176,11 +176,11 @@ furnaceRemove(<immersiveengineering:metal:2>        , <immersiveengineering:ore:
 furnaceRemove(<immersiveengineering:metal:3>        , <immersiveengineering:ore:3>);
 furnaceRemove(<immersiveengineering:metal:4>        , <immersiveengineering:ore:4>);
 furnaceRemove(<immersiveengineering:metal>          , <immersiveengineering:ore>);
-furnaceRemove(<nuclearcraft:ingot:5>                , <jaopca:item_hunkboron>);
-furnaceRemove(<nuclearcraft:ingot:6>                , <jaopca:item_hunklithium>);
-furnaceRemove(<nuclearcraft:ingot:7>                , <jaopca:item_hunkmagnesium>);
-furnaceRemove(<nuclearcraft:ingot:3>                , <jaopca:item_hunkthorium>);
-furnaceRemove(<immersiveengineering:metal:5>        , <jaopca:item_hunkuranium>);
+furnaceRemove(<nuclearcraft:ingot:5>                , <jaopca:exnihilocreatio_chunk.boron>);
+furnaceRemove(<nuclearcraft:ingot:6>                , <jaopca:exnihilocreatio_chunk.lithium>);
+furnaceRemove(<nuclearcraft:ingot:7>                , <jaopca:exnihilocreatio_chunk.magnesium>);
+furnaceRemove(<nuclearcraft:ingot:3>                , <jaopca:exnihilocreatio_chunk.thorium>);
+furnaceRemove(<immersiveengineering:metal:5>        , <jaopca:exnihilocreatio_chunk.uranium>);
 furnaceRemove(<thermalfoundation:material:128>      , <libvulpes:ore0:4>);
 furnaceRemove(<thermalfoundation:material:129>      , <libvulpes:ore0:5>);
 furnaceRemove(<minecraft:iron_ingot>                , <libvulpes:productdust:1>);
@@ -237,8 +237,8 @@ Purge(<ic2:resource:5>).ores([<ore:blockBronze>]); // Bronze
 recipesRemove(<ic2:ingot:5>);
 // *============================*
 
-Purge(<jaopca:item_dusttinyanglesite>).ores([<ore:dustTinyAnglesite>]);
-Purge(<jaopca:item_dusttinybenitoite>).ores([<ore:dustTinyBenitoite>]);
+Purge(<jaopca:dust.tinyanglesite>).ores([<ore:dustTinyAnglesite>]);
+Purge(<jaopca:dust.tinybenitoite>).ores([<ore:dustTinyBenitoite>]);
 Purge(<contenttweaker:item_ore_anglesite:1>).ores([<ore:oreAnglesite>]);
 Purge(<contenttweaker:item_ore_anglesite:2>).ores([<ore:dustAnglesite>]);
 Purge(<contenttweaker:item_ore_anglesite:3>).furn().ores([<ore:ingotAnglesite>]);
@@ -248,8 +248,8 @@ Purge(<contenttweaker:item_ore_benitoite:3>).furn().ores([<ore:ingotBenitoite>])
 Purge(<contenttweaker:item_ore_tungsten:1>).ores([<ore:oreTungsten>]);
 Purge(<contenttweaker:item_ore_tungsten:2>).ores([<ore:dustTungsten>]);
 Purge(<contenttweaker:item_ore_tungsten:3>).furn().ores([<ore:ingotTungsten>]);
-Purge(<jaopca:block_blocktungsten>).ores([<ore:blockTungsten>]);
-Purge(<jaopca:item_nuggettungsten>).ores([<ore:nuggetTungsten>]);
+Purge(<jaopca:block.tungsten>).ores([<ore:blockTungsten>]);
+Purge(<jaopca:nugget.tungsten>).ores([<ore:nuggetTungsten>]);
 Purge(<enderio:item_owl_egg>);
 Purge(<thermalfoundation:material:656>);
 Purge(<ae2stuff:visualiser>);
@@ -328,7 +328,7 @@ val gearsToRemove = [
   <thermalfoundation:material:294>,
   <thermalfoundation:material:295>,
   <redstonearsenal:material:96>,
-  <jaopca:item_geardraconium>,
+  <jaopca:gear.draconium>,
 ] as IItemStack[];
 
 for item in gearsToRemove {

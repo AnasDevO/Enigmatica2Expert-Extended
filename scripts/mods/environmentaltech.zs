@@ -207,7 +207,7 @@ recipes.addShapeless(
 recipes.addShapeless(
   'ore chunk fix 2',
   <endreborn:block_wolframium_ore>, [
-    <jaopca:item_hunktungsten>
+    <jaopca:exnihilocreatio_chunk.tungsten>
 ]);
 
 // "Core" material

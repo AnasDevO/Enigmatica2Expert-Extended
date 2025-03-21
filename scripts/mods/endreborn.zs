@@ -239,9 +239,9 @@ craft.shapeless(<endreborn:item_ingot_endorium>, '‚‚‚‚‚‚‚‚‚', 
 // Tungsten
 // ----------------------------------------------------------------------------
 // Fix Tungsten Nugget output from Infernal Furnace
-recipes.addShapeless(<endreborn:wolframium_nugget>, [<jaopca:item_nuggettungsten>]);
+recipes.addShapeless(<endreborn:wolframium_nugget>, [<jaopca:nugget.tungsten>]);
 craft.shapeless(<endreborn:item_ingot_wolframium>, '‚‚‚‚‚‚‚‚‚', {
-  '‚': <jaopca:item_nuggettungsten>,
+  '‚': <jaopca:nugget.tungsten>,
 });
 
 // ----------------------------------------------------------------------------
